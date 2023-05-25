@@ -1,5 +1,5 @@
 function luas() {
-
+    //Validate text field sisi luas
     var sisi = document.getElementById("sisi-luas").value;
     if (isNaN(sisi) || sisi == "") {
         alert("Input sisi belum benar, tolong jangan di kosongi dan di isi angka saja!");
@@ -12,6 +12,7 @@ function luas() {
 
 }
 function keliling() {
+    //Validate text field  sisi keliling
     var sisi = document.getElementById("sisi-keliling").value;
     if (isNaN(sisi) || sisi == "") {
         alert("Input sisi belum benar, tolong jangan di kosongi dan di isi angka saja!");
