@@ -1,28 +1,28 @@
 function luas() {
 
-    var sisi = document.getElementById("sisi").value;
+    var sisi = document.getElementById("sisi-luas").value;
     if (isNaN(sisi) || sisi == "") {
         alert("Input sisi belum benar, tolong jangan di kosongi dan di isi angka saja!");
         return;
     }
     var luas;
     luas = sisi * sisi;
-    document.getElementById("hasil").innerHTML = "L = S x S <br> L = " + sisi + " x " + sisi + "<br> L = " + luas;
+    document.getElementById("output_luas").innerHTML = "L = S x S <br> L = " + sisi + " x " + sisi + "<br> L = " + luas;
 
 
 }
 function keliling() {
-    var sisi = document.getElementById("sisi").value;
+    var sisi = document.getElementById("sisi-keliling").value;
     if (isNaN(sisi) || sisi == "") {
         alert("Input sisi belum benar, tolong jangan di kosongi dan di isi angka saja!");
         return;
     }
     var keliling;
     keliling = sisi * 4;
-    document.getElementById("hasil").innerHTML = "K = S x 4 <br> K = " + sisi + " x 4" + "<br> L = " + keliling;
+    document.getElementById("output_keliling").innerHTML = "K = S x 4 <br> K = " + sisi + " x 4" + "<br> L = " + keliling;
 }
 
 function reset() {
-    document.getElementById("hasil").innerHTML = "";
-
+    document.getElementById("output_luas").innerHTML = "";
+    document.getElementById("output_keliling").innerHTML = "";
 }
